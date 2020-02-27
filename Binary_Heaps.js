@@ -3,7 +3,7 @@ class MaxBinaryHeap {
     this.values = []
   }
   insert(value) {
-    debugger
+    
     this.values.push(value)
 
     let current = this.values.length-1
@@ -19,7 +19,27 @@ class MaxBinaryHeap {
       new_pos = Math.floor((current - 1) / 2) 
     }
   }
+  extractMax() {
+    let output = this.values[0]
+    this.values[this.values.length - 1] = this.values[0]
+
+    this.values[0] = this.values[this.values.length -1]
+
+    
+
+  }
 }
+
+
+  //remove Max
+  //compare children
+    //set variables to children and compare values
+
+
+
+
+
+
 
 //current pointer
   // check value against current node
